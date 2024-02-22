@@ -1,6 +1,5 @@
 job('My Job-DSL-example') {
     logRotator(3, 5)
-
     description('My first job')
 
     properties {
@@ -8,7 +7,7 @@ job('My Job-DSL-example') {
     }
 
     scm {
-        github('https://github.com/y-kartal/java-tomcat-sample-main.git', 'main')
+        git('https://github.com/y-kartal/java-tomcat-sample-main.git', 'main')
     }
 
     triggers {
