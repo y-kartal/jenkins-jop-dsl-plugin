@@ -28,6 +28,6 @@ job('My Job-DSL-example') {
     }
 
     publishers {
-        archiveArtifacts('build/test-output/**/*.jar')
+        archiveArtifacts('**/*.jar')
     }
 }
